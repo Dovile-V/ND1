@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restoranų rekomendacijų puslapis su atrinktais restoranais Lietuvoje, patiekalų rekomendacijomis ir miestų pasirinkimu.">
+    <meta name="keywords" content="restoranai, rekomendacijos, Vilnius, Kaunas, Klaipėda, maistas">
+    <meta name="author" content="Tavo vardas pavardė">
+    <title>Restoranų rekomendacijos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Skonio gidas</div>
+        <div class="nav-links">
+            <a href="index.html">Pagrindinis</a>
+            <a href="rekomendacijos.html">Rekomendacijos</a>
+            <a href="siulyti.html">Siūlyti restoraną</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <p class="small-label">ATRINKTI RESTORANAI LIETUVOJE</p>
+        <h1>Restoranų rekomendacijos</h1>
+        <p class="hero-text">
+            Čia rasi atrinktus restoranus Lietuvoje, rekomenduojamus patiekalus
+            ir galimybę pasiūlyti savo mėgstamą vietą.
+        </p>
+    </header>
+
+    <section class="city-filter">
+        <a href="#visi">Visi</a>
+        <a href="#vilnius">Vilnius</a>
+        <a href="#kaunas">Kaunas</a>
+        <a href="#klaipeda">Klaipėda</a>
+    </section>
+
+    <main class="container" id="visi">
+        <section class="city-section" id="vilnius">
+            <div class="section-header">
+                <h2>Vilnius</h2>
+                <p>Mano pasirinkti restoranai Vilniuje.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="restaurant-card">
+                    <img src="img/restoranas1.jpg" alt="Fiorentino restorano patiekalas">
+                    <div class="card-body">
+                        <span class="tag">Italų virtuvė</span>
+                        <h3>Fiorentino</h3>
+                        <p>Itališkas restoranas Vilniuje, išsiskiriantis elegantiška aplinka ir autentiškais skoniais.</p>
+                        <ul class="mini-list">
+                            <li>Miestas: Vilnius</li>
+                            <li>Įvertinimas: 9/10</li>
+                            <li>Verta paragauti: Pasta su trumais</li>
+                        </ul>
+                        <a href="restoranas1.html" class="btn">Plačiau</a>
+                    </div>
+                </article>
+
+                <article class="restaurant-card">
+                    <img src="img/restoranas2.jpg" alt="Meeting Room restorano patiekalas">
+                    <div class="card-body">
+                        <span class="tag">Moderni virtuvė</span>
+                        <h3>Meeting Room</h3>
+                        <p>Modernus restoranas Vilniuje su kūrybišku meniu ir jaukia, šiuolaikiška atmosfera.</p>
+                        <ul class="mini-list">
+                            <li>Miestas: Vilnius</li>
+                            <li>Įvertinimas: 9/10</li>
+                            <li>Verta paragauti: Degustuojamasis meniu</li>
+                        </ul>
+                        <a href="restoranas2.html" class="btn">Plačiau</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="city-section" id="kaunas">
+            <div class="section-header">
+                <h2>Kaunas</h2>
+                <p>Restoranas, kurį verta aplankyti netoli Kauno.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="restaurant-card">
+                    <img src="img/restoranas3.jpg" alt="Foxy restorano burgeris">
+                    <div class="card-body">
+                        <span class="tag">Moderni virtuvė</span>
+                        <h3>Foxy</h3>
+                        <p>Populiarus restoranas netoli Kauno, vertinamas dėl skanaus maisto ir sočių patiekalų.</p>
+                        <ul class="mini-list">
+                            <li>Miestas: Kaunas</li>
+                            <li>Įvertinimas: 10/10</li>
+                            <li>Verta paragauti: Anties krūtinėle</li>
+                        </ul>
+                        <a href="restoranas3.html" class="btn">Plačiau</a>
+                    </div>
+                </article>
+
+                <article class="restaurant-card">
+                    <img src="img/restoranas5.jpg" alt="Pelėdinė restorano patiekalas">
+                    <div class="card-body">
+                        <span class="tag">Amerikietiška virtuvė</span>
+                        <h3>Pelėdinė</h3>
+                        <p>Restoranas Kaune, garsėjantis burgeriais, ant žarijų kepta mėsa ir jaukia atmosfera miesto centre.</p>
+                        <ul class="mini-list">
+                            <li>Miestas: Kaunas</li>
+                            <li>Įvertinimas: 8/10</li>
+                            <li>Verta paragauti: BBQ burgerį</li>
+                        </ul>
+                        <a href="restoranas5.html" class="btn">Plačiau</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="city-section" id="klaipeda">
+            <div class="section-header">
+                <h2>Klaipėda</h2>
+                <p>Mano pasirinktas restoranas Klaipėdos senamiestyje.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="restaurant-card">
+                    <img src="img/restoranas4.jpg" alt="MUDU restorano patiekalas">
+                    <div class="card-body">
+                        <span class="tag">Europos virtuvė</span>
+                        <h3>MUDU</h3>
+                        <p>Jaukus restoranas Klaipėdos senamiestyje, garsėjantis šiuolaikiška europietiška virtuve.</p>
+                        <ul class="mini-list">
+                            <li>Miestas: Klaipėda</li>
+                            <li>Įvertinimas: 9/10</li>
+                            <li>Verta paragauti: Jūros gėrybių patiekalus</li>
+                        </ul>
+                        <a href="restoranas4.html" class="btn">Plačiau</a>
+                    </div>
+                </article>
+
+                <article class="restaurant-card">
+                    <img src="img/restoranas6.jpg" alt="Pepper Grey restorano patiekalas">
+                    <div class="card-body">
+                        <span class="tag">Armėniška virtuvė</span>
+                        <h3>Pepper Grey</h3>
+                        <p>Modernus restoranas Klaipėdoje, garsėjantis stilinga aplinka ir išskirtiniais skoniais.</p>
+                        <ul class="mini-list">
+                            <li>Miestas: Klaipėda</li>
+                            <li>Įvertinimas: 9/10</li>
+                            <li>Verta paragauti: Steak su padažu</li>
+                        </ul>
+                        <a href="restoranas6.html" class="btn">Plačiau</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="city-section">
+            <div class="info-box">
+                <h2>Nori pasiūlyti savo restoraną?</h2>
+                <p>
+                    Jei žinai restoraną, kuris vertas būti šiame sąraše, gali pasiūlyti savo mėgstamą vietą.
+                    Visi pasiūlymai yra peržiūrimi puslapio autoriaus ir tik tada gali būti įtraukti į rekomendacijas.
+                </p>
+                <a href="siulyti.html" class="btn">Siūlyti restoraną</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
