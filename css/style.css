@@ -269,6 +269,13 @@ body {
     line-height: 1.7;
     color: #4f4743;
 }
+.detail-content iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 15px;
+}
 
 /* BACK LINK */
 .back-link {
