@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <nav class="navbar">
         <div class="logo">Skonio gidas</div>
         <div class="nav-links">
@@ -29,6 +30,7 @@
     </header>
 
     <section class="city-filter">
+        <h2 style="display:none;">Miestų filtravimas</h2>
         <a href="#visi">Visi</a>
         <a href="#vilnius">Vilnius</a>
         <a href="#kaunas">Kaunas</a>
@@ -36,6 +38,8 @@
     </section>
 
     <main class="container" id="visi">
+
+        <!-- VILNIUS -->
         <section class="city-section" id="vilnius">
             <div class="section-header">
                 <h2>Vilnius</h2>
@@ -63,7 +67,7 @@
                     <div class="card-body">
                         <span class="tag">Moderni virtuvė</span>
                         <h3>Meeting Room</h3>
-                        <p>Modernus restoranas Vilniuje su kūrybišku meniu ir jaukia, šiuolaikiška atmosfera.</p>
+                        <p>Modernus restoranas Vilniuje su kūrybišku meniu ir jaukia atmosfera.</p>
                         <ul class="mini-list">
                             <li>Miestas: Vilnius</li>
                             <li>Įvertinimas: 9/10</li>
@@ -75,6 +79,7 @@
             </div>
         </section>
 
+        <!-- KAUNAS -->
         <section class="city-section" id="kaunas">
             <div class="section-header">
                 <h2>Kaunas</h2>
@@ -87,11 +92,11 @@
                     <div class="card-body">
                         <span class="tag">Moderni virtuvė</span>
                         <h3>Foxy</h3>
-                        <p>Populiarus restoranas netoli Kauno, vertinamas dėl skanaus maisto ir sočių patiekalų.</p>
+                        <p>Populiarus restoranas netoli Kauno.</p>
                         <ul class="mini-list">
                             <li>Miestas: Kaunas</li>
                             <li>Įvertinimas: 10/10</li>
-                            <li>Verta paragauti: Anties krūtinėle</li>
+                            <li>Verta paragauti: Anties krūtinėlę</li>
                         </ul>
                         <a href="restoranas3.html" class="btn">Plačiau</a>
                     </div>
@@ -102,7 +107,7 @@
                     <div class="card-body">
                         <span class="tag">Amerikietiška virtuvė</span>
                         <h3>Pelėdinė</h3>
-                        <p>Restoranas Kaune, garsėjantis burgeriais, ant žarijų kepta mėsa ir jaukia atmosfera miesto centre.</p>
+                        <p>Restoranas Kaune su burgeriais ir grilio patiekalais.</p>
                         <ul class="mini-list">
                             <li>Miestas: Kaunas</li>
                             <li>Įvertinimas: 8/10</li>
@@ -114,10 +119,11 @@
             </div>
         </section>
 
+        <!-- KLAIPEDA -->
         <section class="city-section" id="klaipeda">
             <div class="section-header">
                 <h2>Klaipėda</h2>
-                <p>Mano pasirinktas restoranas Klaipėdos senamiestyje.</p>
+                <p>Mano pasirinktas restoranas Klaipėdoje.</p>
             </div>
 
             <div class="card-grid">
@@ -126,7 +132,7 @@
                     <div class="card-body">
                         <span class="tag">Europos virtuvė</span>
                         <h3>MUDU</h3>
-                        <p>Jaukus restoranas Klaipėdos senamiestyje, garsėjantis šiuolaikiška europietiška virtuve.</p>
+                        <p>Jaukus restoranas Klaipėdos senamiestyje.</p>
                         <ul class="mini-list">
                             <li>Miestas: Klaipėda</li>
                             <li>Įvertinimas: 9/10</li>
@@ -141,11 +147,11 @@
                     <div class="card-body">
                         <span class="tag">Armėniška virtuvė</span>
                         <h3>Pepper Grey</h3>
-                        <p>Modernus restoranas Klaipėdoje, garsėjantis stilinga aplinka ir išskirtiniais skoniais.</p>
+                        <p>Restoranas Klaipėdoje su grilio patiekalais.</p>
                         <ul class="mini-list">
                             <li>Miestas: Klaipėda</li>
                             <li>Įvertinimas: 9/10</li>
-                            <li>Verta paragauti: Steak su padažu</li>
+                            <li>Verta paragauti: Steak</li>
                         </ul>
                         <a href="restoranas6.html" class="btn">Plačiau</a>
                     </div>
@@ -153,29 +159,29 @@
             </div>
         </section>
 
-        <section class="city-section">
+        <!-- INFO BLOKAI (FIX) -->
+        <div class="city-section">
             <div class="info-box">
                 <h2>Nori pasiūlyti savo restoraną?</h2>
                 <p>
-                    Jei žinai restoraną, kuris vertas būti šiame sąraše, gali pasiūlyti savo mėgstamą vietą.
-                    Visi pasiūlymai yra peržiūrimi puslapio autoriaus ir tik tada gali būti įtraukti į rekomendacijas.
+                    Jei žinai restoraną, kuris vertas būti šiame sąraše, gali pasiūlyti savo vietą.
                 </p>
                 <a href="siulyti.html" class="btn">Siūlyti restoraną</a>
             </div>
-        </section>
+        </div>
 
-        <section class="city-section">
+        <div class="city-section">
             <div class="info-box">
                 <details>
-                <summary><strong>Kaip naudotis šiuo puslapiu?</strong></summary>
-                <p>
-                   Pasirink miestą viršuje, peržiūrėk restoranų rekomendacijas
-                   ir paspausk „Plačiau“, kad sužinotum daugiau apie kiekvieną vietą.
-                   Taip pat gali pasiūlyti savo mėgstamą restoraną.
-                </p>
+                    <summary><strong>Kaip naudotis šiuo puslapiu?</strong></summary>
+                    <p>
+                        Pasirink miestą ir peržiūrėk restoranus arba pasiūlyk savo.
+                    </p>
                 </details>
             </div>
-        </section>
+        </div>
+
     </main>
+
 </body>
 </html>
