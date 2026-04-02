@@ -29,8 +29,7 @@ bei pasiūlyti savo restoraną.
 
 ## Kaip paleisti projektą
 
-1. Parsisiųsti projektą iš GitHub:
-
+1. Parsisiųsti projektą iš GitHub: https://github.com/Dovile-V/ND1
 
 2. Atidaryti projektą kompiuteryje
 
