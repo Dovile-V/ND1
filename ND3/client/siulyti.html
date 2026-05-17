@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive dizainui -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Forma, skirta pasiūlyti mėgstamą restoraną. Duomenys išsaugomi MongoDB duomenų bazėje.">
+    <meta name="keywords" content="siūlyti restoraną, restorano forma, maisto rekomendacijos">
+    <meta name="author" content="Dovilė Viršilienė">
+
+    <title>Siūlyti restoraną</title>
+
+    <!-- Bootstrap CSS karkasas -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extra.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Skonio gidas</div>
+
+        <div class="nav-links">
+            <a href="index.html">Pagrindinis</a>
+            <a href="rekomendacijos.html">Rekomendacijos</a>
+            <a href="siulyti.html">Siūlyti restoraną</a>
+        </div>
+
+        <button class="btn btn-dark btn-sm" onclick="toggleDarkMode()">🌙 Tema</button>
+    </nav>
+
+    <section class="hero">
+        <p class="small-label">VARTOTOJŲ PASIŪLYMAI</p>
+        <h1>Siūlyk savo mėgstamą restoraną</h1>
+        <p class="hero-text">
+            Jei žinai vietą, kuri verta būti šiame puslapyje, užpildyk formą.
+            Tavo pasiūlymas bus peržiūrėtas administratoriaus.
+        </p>
+    </section>
+
+    <main class="form-section">
+        <h2>Pasiūlymo forma</h2>
+
+        <div id="successMessage" class="alert alert-success d-none">
+            Ačiū! Jūsų pasiūlymas užregistruotas ir bus peržiūrėtas administratoriaus.
+        </div>
+
+        <div id="errorMessage" class="alert alert-danger d-none">
+            Įvyko klaida. Pasiūlymas neišsaugotas.
+        </div>
+
+        <form class="form-box" id="suggestionForm" onsubmit="submitSuggestion(event)">
+
+            <label for="pavadinimas">Restorano pavadinimas</label>
+            <input
+                class="form-control"
+                type="text"
+                id="pavadinimas"
+                name="pavadinimas"
+                placeholder="Įrašyk restorano pavadinimą"
+                pattern="^[A-Za-zĄČĘĖĮŠŲŪŽąčęėįšųūž][A-Za-z0-9ĄČĘĖĮŠŲŪŽąčęėįšųūž\s\-',.&]{1,49}$"
+                title="Pavadinimas turi prasidėti raide."
+                minlength="2"
+                maxlength="50"
+                required
+            >
+
+            <label for="miestas">Miestas</label>
+            <select class="form-select" id="miestas" name="miestas" required>
+                <option value="">Pasirink miestą</option>
+                <option>Vilnius</option>
+                <option>Kaunas</option>
+                <option>Klaipėda</option>
+                <option>Šiauliai</option>
+                <option>Panevėžys</option>
+                <option>Kitas</option>
+            </select>
+
+            <label for="virtuve">Virtuvės tipas</label>
+            <select class="form-select" id="virtuve" name="virtuve" required>
+                <option value="">Pasirink virtuvę</option>
+                <option>Italų</option>
+                <option>Azijietiška</option>
+                <option>Amerikietiška</option>
+                <option>Lietuviška</option>
+                <option>Desertai</option>
+                <option>Vegetariška</option>
+                <option>Armėniška</option>
+                <option>Moderni</option>
+                <option>Kita</option>
+            </select>
+
+            <label for="patiekalas">Ką verta paragauti?</label>
+            <input
+                class="form-control"
+                type="text"
+                id="patiekalas"
+                name="patiekalas"
+                placeholder="Pvz. Pasta su trumais"
+                minlength="2"
+                maxlength="60"
+                required
+            >
+
+            <label for="vertinimas">Tavo įvertinimas</label>
+            <input
+                class="form-control"
+                type="number"
+                id="vertinimas"
+                name="vertinimas"
+                min="1"
+                max="10"
+                placeholder="1-10"
+                required
+            >
+
+            <label for="komentaras">Trumpas komentaras</label>
+            <textarea
+                class="form-control"
+                id="komentaras"
+                name="komentaras"
+                rows="5"
+                placeholder="Parašyk, kuo ši vieta ypatinga"
+                minlength="10"
+                maxlength="300"
+                required
+            ></textarea>
+
+            <label for="vardas">Tavo vardas</label>
+            <input
+                class="form-control"
+                type="text"
+                id="vardas"
+                name="vardas"
+                placeholder="Įrašyk savo vardą"
+                minlength="2"
+                maxlength="40"
+                required
+            >
+
+            <button type="submit" class="btn btn-success mt-3">Siųsti pasiūlymą</button>
+        </form>
+    </main>
+
+    <!-- Bootstrap JS karkasas -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Projekto JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

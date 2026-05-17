@@ -1,0 +1,319 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    gap: 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 24px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px 30px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero-text {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: var(--muted-text);
+}
+
+.filter-box {
+    width: 84%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.city-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 84%;
+    margin: auto;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.restaurant-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.tag {
+    background: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.info-box {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--radius);
+    margin-top: 20px;
+}
+
+.detail-page {
+    width: 80%;
+    margin: auto;
+}
+
+.detail-card img {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background: var(--secondary-color);
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form-box input:invalid,
+.form-box select:invalid,
+.form-box textarea:invalid {
+    border: 2px solid red;
+    background-color: #fff0f0;
+}
+
+.form-box input:valid,
+.form-box select:valid,
+.form-box textarea:valid {
+    border: 2px solid green;
+    background-color: #f0fff0;
+}
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-box button {
+    margin-top: 15px;
+    padding: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background: var(--primary-dark);
+}
+
+/* Responsive Tablet */
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form-section,
+.table-section {
+    width: 84%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.form-box {
+    gap: 12px;
+}
+
+.form-box label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.form-control,
+.form-select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-box input:invalid:not(:placeholder-shown),
+.form-box textarea:invalid:not(:placeholder-shown) {
+    border: 2px solid red;
+    background-color: #fff0f0;
+}
+
+.form-box input:valid,
+.form-box select:valid,
+.form-box textarea:valid {
+    border: 2px solid green;
+    background-color: #f0fff0;
+}
+
+.table-section table {
+    background: white;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 24px 20px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        font-size: 17px;
+    }
+
+    .hero {
+        padding: 45px 22px 25px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .filter-box,
+    .container,
+    .form-section,
+    .table-section,
+    .detail-page {
+        width: 92%;
+    }
+
+    .form-section,
+    .table-section {
+        padding: 22px;
+    }
+
+    .city-buttons {
+        gap: 8px;
+    }
+
+    .city-buttons .btn {
+        min-width: 105px;
+    }
+}

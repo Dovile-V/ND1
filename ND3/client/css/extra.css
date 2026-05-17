@@ -1,0 +1,260 @@
+body.dark {
+    background-color: #1f1b18;
+    color: #f7eee9;
+}
+
+body.dark .navbar {
+    background-color: #2d2521;
+    border-bottom-color: #5c433b;
+}
+
+body.dark .logo,
+body.dark .nav-links a,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark li,
+body.dark label,
+body.dark summary {
+    color: #f7eee9;
+}
+
+body.dark .hero-text,
+body.dark .section-header p,
+body.dark .restaurant-card p,
+body.dark .mini-list,
+body.dark .detail-content p,
+body.dark .detail-content li {
+    color: #e0ccc3;
+}
+
+body.dark .restaurant-card,
+body.dark .card-body,
+body.dark .info-box,
+body.dark .table-section,
+body.dark .form-section,
+body.dark .detail-card,
+body.dark .detail-content {
+    background-color: #2b2420;
+    color: #f7eee9;
+}
+
+body.dark .tag {
+    background-color: #f2ddd6;
+    color: #2d211d;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: #ffffff;
+}
+
+body.dark .btn-primary {
+    background-color: #9c4f3d;
+    border-color: #9c4f3d;
+    color: #ffffff;
+}
+
+body.dark .btn-primary:hover {
+    background-color: #7f3f30;
+    border-color: #7f3f30;
+}
+
+.btn-success {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn-success:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+body.dark .btn-success {
+    background-color: #9c4f3d;
+    border-color: #9c4f3d;
+}
+
+body.dark .btn-success:hover {
+    background-color: #7f3f30;
+    border-color: #7f3f30;
+}
+
+body.dark table,
+body.dark .table {
+    background-color: #2b2420;
+    color: #f7eee9;
+}
+
+body.dark th,
+body.dark td,
+body.dark .table th,
+body.dark .table td {
+    background-color: #2b2420;
+    color: #f7eee9;
+    border-color: #6d554b;
+}
+
+body.dark thead th,
+body.dark .table thead th {
+    background-color: #3a2f2a;
+    color: #ffffff;
+}
+
+body.dark .table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #332a25;
+    color: #f7eee9;
+}
+
+body.dark .table-striped > tbody > tr:nth-of-type(even) > * {
+    background-color: #2b2420;
+    color: #f7eee9;
+}
+
+body.dark input,
+body.dark select,
+body.dark textarea,
+body.dark .form-control,
+body.dark .form-select {
+    background-color: #3a2f2a;
+    color: #ffffff;
+    border-color: #6d554b;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+    color: #d8c7bf;
+}
+
+body.dark .form-box input:invalid,
+body.dark .form-box textarea:invalid,
+body.dark .form-box select:invalid {
+    background-color: #3a2f2a;
+    color: #ffffff;
+}
+
+body.dark .form-box input:invalid:not(:placeholder-shown),
+body.dark .form-box textarea:invalid:not(:placeholder-shown) {
+    background-color: #4a2f2f;
+    color: #ffffff;
+    border-color: #d86a5c;
+}
+
+body.dark .form-box input:valid,
+body.dark .form-box select:valid,
+body.dark .form-box textarea:valid {
+    background-color: #2f4638;
+    color: #ffffff;
+    border-color: #65b985;
+}
+
+.detail-card img {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+.detail-card {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.restaurant-card {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn,
+.table-link-btn {
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.btn:hover,
+.table-link-btn:hover {
+    transform: scale(1.04);
+}
+
+@media (max-width: 600px) {
+
+    .detail-card img {
+        max-height: 260px;
+    }
+
+    .navbar {
+        padding: 24px 20px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        font-size: 17px;
+    }
+
+    .hero {
+        padding: 45px 22px 25px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .filter-box,
+    .container,
+    .form-section,
+    .table-section,
+    .detail-page {
+        width: 92%;
+    }
+
+    .form-section,
+    .table-section {
+        padding: 22px;
+    }
+
+    .city-buttons {
+        gap: 8px;
+    }
+
+    .city-buttons .btn {
+        min-width: 105px;
+    }
+}
