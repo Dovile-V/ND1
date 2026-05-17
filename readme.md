@@ -1,45 +1,170 @@
-# Restoranų rekomendacijų puslapis
+# Restoranų rekomendacijų sistema
 
 ## Projekto aprašymas
-Tai internetinis puslapis, kuriame pateikiamos restoranų rekomendacijos Lietuvoje. 
-Vartotojas gali peržiūrėti restoranus pagal miestus, matyti rekomenduojamus patiekalus 
-bei pasiūlyti savo restoraną.
+Tai MERN modeliu sukurta restoranų rekomendacijų web aplikacija. 
+Projektą sudaro viešas restoranų puslapis, React administravimo sistema 
+ir MongoDB duomenų bazė.
 
-## Projekto funkcijos
-- Restoranų kortelės su informacija
-- Filtravimas pagal miestus (Vilnius, Kaunas, Klaipėda)
-- Išsamūs restoranų puslapiai
-- Rekomendacijų lentelė su įvertinimais
+Vartotojai gali:
+- peržiūrėti restoranus,
+- filtruoti pagal miestus,
+- ieškoti restoranų,
+- matyti detalų restorano puslapį su žemėlapiu,
+- siūlyti naujus restoranus.
+
+Administratorius gali:
+- prisijungti prie admin sistemos,
+- kurti restoranus,
+- redaguoti restoranus,
+- trinti restoranus,
+- peržiūrėti lankytojų pasiūlymus.
+
+---
+
+# Projekto funkcijos
+
+## Vieša puslapio dalis
+- Restoranų kortelės
+- Filtravimas pagal miestą
+- Restoranų paieška
+- Responsive dizainas
+- Tamsi tema
+- Restoranų detalus puslapis
+- Google Maps žemėlapis
+- Restoranų rekomendacijų lentelė
 - Forma restoranų pasiūlymui
 
-## Naudotos technologijos
+## Admin sistema
+- Prisijungimas
+- Restoranų kūrimas
+- Restoranų redagavimas
+- Restoranų trynimas
+- Pasiūlymų peržiūra
+- CRUD operacijos
+
+---
+
+# Naudotos technologijos
+
+## Frontend
 - HTML5
-- CSS3 (Flexbox, Grid)
-- Formos validacija
+- CSS3
+- JavaScript
+- Bootstrap
+- React
+- Axios
 
-## Projekto struktūra
-- index.html – pagrindinis puslapis
-- rekomendacijos.html – restoranų lentelė
-- siulyti.html – pasiūlymo forma
-- restoranas1–6.html – restoranų aprašymai
-- css/style.css – stiliai
-- img/ – nuotraukos
-- notes.md – projekto planas
-- readme.md – projekto aprašymas
+## Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
 
-## Kaip paleisti projektą
+---
 
-1. Parsisiųsti projektą iš GitHub: https://github.com/Dovile-V/ND1
+# Projekto struktūra
 
-2. Atidaryti projektą kompiuteryje
+## Vieša puslapio dalis
+- client/
+  - index.html
+  - rekomendacijos.html
+  - siulyti.html
+  - restoranas.html
+  - css/
+  - js/
+  - img/
 
-3. Paleisti projektą:
-- atidaryti failą **index.html** naršyklėje
-ARBA
-- naudoti „Live Server“ VS Code aplinkoje
+## React administravimo sistema
+- client-react/
+  - src/
+  - components/
 
-## Papildoma informacija
-Projektas veikia tik naršyklėje, nereikia serverio ar papildomų programų.
+## Backend serveris
+- server/
+  - controllers/
+  - models/
+  - routes/
+  - server.js
+
+---
+
+# Kaip paleisti projektą
+
+## 1. Paleisti backend serverį
+
+```bash
+cd server
+npm start
+
+```
+
+Serveris paleidžiamas adresu:
+
+http://localhost:5050
+
+---
+
+## 2. Paleisti React admin aplikaciją
+
+```bash
+cd client-react
+npm run dev
+```
+
+React aplikacija paleidžiama adresu:
+
+http://localhost:5173
+
+---
+
+# Pagrindiniai puslapiai
+
+## Viešas puslapis
+http://localhost:5050
+
+## Rekomendacijos
+http://localhost:5050/rekomendacijos.html
+
+## Siūlyti restoraną
+http://localhost:5050/siulyti.html
+
+## Admin sistema
+http://localhost:5173
+
+---
+
+# Papildomi funkcionalumai
+
+- Tamsi tema (dark mode)
+- Restoranų paieška
+- Filtravimas pagal miestus
+- Responsive dizainas telefonams ir planšetėms
+- Dinaminis restoranų užkrovimas iš MongoDB
+- Dinaminis detalus restorano puslapis
+- Google Maps žemėlapis pagal adresą
+- React administravimo sistema
+- Admin prisijungimas
+- Restoranų CRUD operacijos
+- Lankytojų pasiūlymų sistema
+- Formų validacija
+- Kortelių animacijos ir hover efektai
+
+---
+
+# Papildoma informacija
+
+Projektas sukurtas Interneto technologijų modulio ND1, ND2 ir ND3 užduotims atlikti.
+
+Projektas naudoja:
+- responsive dizainą,
+- Flexbox ir Grid,
+- Bootstrap CSS karkasą,
+- MERN architektūrą,
+- MongoDB duomenų bazę,
+- CRUD operacijas.
+
+---
 
 # Autorius
+
 Dovilė Viršilienė
