@@ -1,13 +1,16 @@
+/* Tamsi tema visam puslapiui */
 body.dark {
     background-color: #1f1b18;
     color: #f7eee9;
 }
 
+/* Tamsios temos navigacijos juosta */
 body.dark .navbar {
     background-color: #2d2521;
     border-bottom-color: #5c433b;
 }
 
+/* Tekstų spalvos tamsioje temoje */
 body.dark .logo,
 body.dark .nav-links a,
 body.dark h1,
@@ -20,6 +23,7 @@ body.dark summary {
     color: #f7eee9;
 }
 
+/* Šviesesnis papildomas tekstas */
 body.dark .hero-text,
 body.dark .section-header p,
 body.dark .restaurant-card p,
@@ -29,6 +33,7 @@ body.dark .detail-content li {
     color: #e0ccc3;
 }
 
+/* Kortelių ir sekcijų fonas */
 body.dark .restaurant-card,
 body.dark .card-body,
 body.dark .info-box,
@@ -40,61 +45,72 @@ body.dark .detail-content {
     color: #f7eee9;
 }
 
+/* Virtuvės žyma */
 body.dark .tag {
     background-color: #f2ddd6;
     color: #2d211d;
 }
 
+/* Pagrindiniai mygtukai */
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: #ffffff;
 }
 
+/* Hover efektas */
 .btn-primary:hover {
     background-color: var(--primary-dark);
     border-color: var(--primary-dark);
     color: #ffffff;
 }
 
+/* Tamsios temos primary mygtukas */
 body.dark .btn-primary {
     background-color: #9c4f3d;
     border-color: #9c4f3d;
     color: #ffffff;
 }
 
+/* Hover efektas tamsioje temoje */
 body.dark .btn-primary:hover {
     background-color: #7f3f30;
     border-color: #7f3f30;
 }
 
+/* Success mygtukai */
 .btn-success {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: #ffffff;
 }
 
+/* Hover efektas */
 .btn-success:hover {
     background-color: var(--primary-dark);
     border-color: var(--primary-dark);
 }
 
+/* Success mygtukas tamsioje temoje */
 body.dark .btn-success {
     background-color: #9c4f3d;
     border-color: #9c4f3d;
 }
 
+/* Hover efektas */
 body.dark .btn-success:hover {
     background-color: #7f3f30;
     border-color: #7f3f30;
 }
 
+/* Lentelės spalvos */
 body.dark table,
 body.dark .table {
     background-color: #2b2420;
     color: #f7eee9;
 }
 
+/* Lentelės langeliai */
 body.dark th,
 body.dark td,
 body.dark .table th,
@@ -104,12 +120,14 @@ body.dark .table td {
     border-color: #6d554b;
 }
 
+/* Lentelės antraštė */
 body.dark thead th,
 body.dark .table thead th {
     background-color: #3a2f2a;
     color: #ffffff;
 }
 
+/* Dryžuota lentelė */
 body.dark .table-striped > tbody > tr:nth-of-type(odd) > * {
     background-color: #332a25;
     color: #f7eee9;
@@ -120,6 +138,7 @@ body.dark .table-striped > tbody > tr:nth-of-type(even) > * {
     color: #f7eee9;
 }
 
+/* Formų laukeliai */
 body.dark input,
 body.dark select,
 body.dark textarea,
@@ -130,11 +149,13 @@ body.dark .form-select {
     border-color: #6d554b;
 }
 
+/* Placeholder tekstas */
 body.dark input::placeholder,
 body.dark textarea::placeholder {
     color: #d8c7bf;
 }
 
+/* Invalid laukeliai */
 body.dark .form-box input:invalid,
 body.dark .form-box textarea:invalid,
 body.dark .form-box select:invalid {
@@ -142,6 +163,7 @@ body.dark .form-box select:invalid {
     color: #ffffff;
 }
 
+/* Invalid laukelis kai pradėta rašyti */
 body.dark .form-box input:invalid:not(:placeholder-shown),
 body.dark .form-box textarea:invalid:not(:placeholder-shown) {
     background-color: #4a2f2f;
@@ -149,6 +171,7 @@ body.dark .form-box textarea:invalid:not(:placeholder-shown) {
     border-color: #d86a5c;
 }
 
+/* Valid laukeliai */
 body.dark .form-box input:valid,
 body.dark .form-box select:valid,
 body.dark .form-box textarea:valid {
@@ -157,6 +180,7 @@ body.dark .form-box textarea:valid {
     border-color: #65b985;
 }
 
+/* Restorano nuotrauka detalioje kortelėje */
 .detail-card img {
     width: 100%;
     max-height: 430px;
@@ -164,15 +188,18 @@ body.dark .form-box textarea:valid {
     display: block;
 }
 
+/* Detalaus puslapio kortelė */
 .detail-card {
     max-width: 950px;
     margin: 0 auto;
 }
 
+/* Kortelių atsiradimo animacija */
 .restaurant-card {
     animation: fadeIn 0.5s ease;
 }
 
+/* FadeIn animacija */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -185,32 +212,39 @@ body.dark .form-box textarea:valid {
     }
 }
 
+/* Mygtukų hover efektas */
 .btn,
 .table-link-btn {
     transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
+/* Mygtukų padidinimas užvedus */
 .btn:hover,
 .table-link-btn:hover {
     transform: scale(1.04);
 }
 
+/* Responsive dizainas telefonams */
 @media (max-width: 600px) {
 
+    /* Mažesnė nuotrauka telefone */
     .detail-card img {
         max-height: 260px;
     }
 
+    /* Navigacijos juosta */
     .navbar {
         padding: 24px 20px;
         text-align: center;
     }
 
+    /* Logotipas */
     .logo {
         font-size: 30px;
         margin-bottom: 15px;
     }
 
+    /* Navigacijos nuorodos */
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -219,24 +253,29 @@ body.dark .form-box textarea:valid {
         margin-bottom: 15px;
     }
 
+    /* Navigacijos tekstas */
     .nav-links a {
         margin-left: 0;
         font-size: 17px;
     }
 
+    /* Hero sekcija */
     .hero {
         padding: 45px 22px 25px;
     }
 
+    /* Hero antraštė */
     .hero h1 {
         font-size: 30px;
         line-height: 1.2;
     }
 
+    /* Hero tekstas */
     .hero-text {
         font-size: 17px;
     }
 
+    /* Pagrindinių blokų plotis */
     .filter-box,
     .container,
     .form-section,
@@ -245,15 +284,18 @@ body.dark .form-box textarea:valid {
         width: 92%;
     }
 
+    /* Formų padding */
     .form-section,
     .table-section {
         padding: 22px;
     }
 
+    /* Miestų mygtukai */
     .city-buttons {
         gap: 8px;
     }
 
+    /* Miestų mygtukų dydis */
     .city-buttons .btn {
         min-width: 105px;
     }

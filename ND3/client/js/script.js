@@ -66,7 +66,6 @@ async function loadRestaurantsFromDatabase() {
 
                         <ul class="mini-list">
                             <li>Miestas: ${restaurant.city}</li>
-                            <li>Adresas: ${restaurant.address || "Nenurodytas"}</li>
                             <li>Įvertinimas: ${restaurant.rating}/10</li>
                             <li>Verta paragauti: ${restaurant.dish}</li>
                         </ul>
